@@ -65,27 +65,24 @@ const Home: NextPage = () => {
         students."
           />
           <FAQ
-            question="What are children?"
-            answer="Children are the future of the city. We are a community of
-        children, and we are here to help them succeed in their future."
+            question="How much does it cost to join?"
+            answer="This Hackathon is 100% free to join so all you have to do is sign up. 
+            Thanks to our sponsors we are able to host this event without any fees. 
+            We would greatly appreciate any Donations as it would improve the Hackathon greatly."
           />
           <FAQ
-            question="What are the rules?"
-            answer="The rules are simple. We encourage everyone to come to the
-        hackathon and participate in the hackathon. We will have a lot of
-        fun, and we hope you will join us!"
+            question="Who can participate?"
+            answer="Our primary patrons are mostly concentrated around the Greater Charlotte Area . 
+                  The majority of our patrons we advocate consist from grades 9-12, however, 
+                  if people grades 8 and under would like to participate then they may do so."
           />
           <FAQ
             question="What are the prizes?"
-            answer="The prizes are going to be $100, $200, $300, $400, $500, $600,
-        $700, $800, $900, $1000, $1100, $1200, $1300, $1400, $1500, $1600, $1700,
-        $1800, $1900, $2000, $2100, $2200, $2300, $2400, $2500, $2600, $2700, $2800,
-        $2900, $3000, $3100, $3200, $3300, $3400, $3500, $3600, $3700, $3800, $3900,
-        $4000, $4100, $4200, $4300, $4400, $4500, $4600, $4700, $4800, $4900, $5000!"
+            answer="We will be giving away a variety of items at this event."
           />
           <FAQ
-            question="What are the dates?"
-            answer="The dates are going to be September 1st - September 3rd, 2020."
+            question="When is the event?"
+            answer="The dates are going to be between November and December of 2022."
           />
         </div>
       </section>
