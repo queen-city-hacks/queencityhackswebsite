@@ -3,8 +3,12 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faCircleXmark } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 const Home: NextPage = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
   return (
     <>
       <section className="h-screen bg-base text-white flex flex-col text-center">
@@ -30,7 +34,42 @@ const Home: NextPage = () => {
               <a className="text-white hover:text-white-500 ml-10">Home</a>
             </Link>
           </div>
+          <FontAwesomeIcon
+            icon={faBars}
+            className="lg:hidden"
+            size="2x"
+            onClick={() => setDropdownOpen(true)}
+          />
         </div>
+        {/* mobile navbar */}
+        {dropdownOpen && (
+          <div
+            className={"py-5 lg:hidden bg-baseLight absolute w-screen top-0 "}
+          >
+            <div className="relative flex flex-col">
+              <div className="flex absolute right-10 top-2">
+                <FontAwesomeIcon
+                  icon={faCircleXmark}
+                  size="lg"
+                  onClick={() => setDropdownOpen(false)}
+                  className="text-white hover:text-gray-400"
+                />
+              </div>
+              <Link href="/team">
+                <a className="text-white hover:text-white-500 py-2 hover:bg-gray-600">
+                  Meet The Team
+                </a>
+              </Link>
+              <Link href="/register">
+                <a className="text-white hover:text-white-500 py-2">Register</a>
+              </Link>
+              <Link href="/">
+                <a className="text-white hover:text-white-500 py-2">Home</a>
+              </Link>
+            </div>
+          </div>
+        )}
+
         <div className="lg:h-1/5 h-1/6" />
         <div className="">
           <h1 className="font-special break-words text-xl hidden lg:block lg:text-6xl">
