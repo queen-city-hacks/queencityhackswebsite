@@ -14,7 +14,7 @@ const Home: NextPage = () => {
   return (
     <>
       <section
-        className="h-screen text-white flex flex-col text-center bg-[url('/dimgamers.jpg')] bg-center bg-cover backdrop-brightness-50"
+        className="h-screen text-white flex flex-col text-center bg-[url('/dimgamers.jpg')] bg-center bg-cover bg-fixed"
         id="header"
       >
         {/* navbar */}
