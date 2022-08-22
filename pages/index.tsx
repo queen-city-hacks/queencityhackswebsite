@@ -95,7 +95,7 @@ interface FAQProps {
 
 const FAQ = ({ question, children }: FAQProps) => {
   return (
-    <div className="bg-base p-5 rounded-2xl shadow-2xl">
+    <div className="bg-base p-5 rounded-2xl shadow-2xl hover:scale-105 transition-all">
       <h2 className="text-2xl font-bold underline">{question}</h2>
       <p className="text-lg pt-3">{children}</p>
     </div>
