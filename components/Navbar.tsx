@@ -29,19 +29,24 @@ const Navbar = ({ setDarkMode }: Props) => {
           />
         </div>
         <div className="flex items-center hidden lg:block">
-          <Link href="/team">
-            <a className="dark:text-white hover:dark:text-white-500">
-              Meet The Team
-            </a>
-          </Link>
-          <Link href="/register">
-            <a className="dark:text-white hover:dark:text-white-500 ml-10">
-              Register
-            </a>
-          </Link>
           <Link href="/">
             <a className="dark:text-white hover:dark:text-white-500 ml-10">
               Home
+            </a>
+          </Link>
+          <Link href="/team">
+            <a className="dark:text-white hover:dark:text-white-500 ml-10">
+              Meet The Team
+            </a>
+          </Link>
+          <Link href="">
+            <a
+              className="dark:text-white hover:dark:text-white-500 ml-10"
+              onClick={() => {
+                alert("work in progress 🤫");
+              }}
+            >
+              Register
             </a>
           </Link>
         </div>
@@ -82,19 +87,24 @@ const Navbar = ({ setDarkMode }: Props) => {
                 className="dark:text-white hover:text-gray-400 hover:dark:text-gray-300 cursor-pointer"
               />
             </div>
+            <Link href="/">
+              <a className="dark:text-white hover:text-gray-600 hover:dark:text-gray-300 py-2">
+                Home
+              </a>
+            </Link>
             <Link href="/team">
               <a className="dark:text-white hover:text-gray-600 hover:dark:text-gray-300 py-2">
                 Meet The Team
               </a>
             </Link>
-            <Link href="/register">
-              <a className="dark:text-white hover:text-gray-600 hover:dark:text-gray-300 py-2">
+            <Link href="">
+              <a
+                className="dark:text-white hover:text-gray-600 hover:dark:text-gray-300 py-2"
+                onClick={() => {
+                  alert("work in progress 🤫");
+                }}
+              >
                 Register
-              </a>
-            </Link>
-            <Link href="/">
-              <a className="dark:text-white hover:text-gray-600 hover:dark:text-gray-300 py-2">
-                Home
               </a>
             </Link>
           </div>
