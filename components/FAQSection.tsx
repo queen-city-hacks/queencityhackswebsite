@@ -1,6 +1,8 @@
+import Footer from "./Footer";
+
 const FAQSection = () => {
   return (
-    <section className=" bg-lightModeBaseLight dark:bg-baseLight flex flex-col dark:text-white p-10">
+    <section className=" bg-lightModeBaseLight dark:bg-baseLight flex flex-col dark:text-white p-10 relative pb-20">
       <h2 className="text-3xl font-bold ">Frequently Asked Questions</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 py-10">
         <FAQ question="What is Queen City Hacks?">
@@ -32,6 +34,7 @@ const FAQSection = () => {
           The dates are going to be between November and December of 2022.
         </FAQ>
       </div>
+      <Footer />
     </section>
   );
 };
