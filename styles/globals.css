@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.notion-collection-card {
+  pointer-events: none;
+  cursor: default;
+}

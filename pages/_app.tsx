@@ -5,6 +5,7 @@ import "@fontsource/inter/";
 // import light font inter
 import "@fontsource/inter/300.css";
 import "@fontsource/inter/700.css";
+import "react-notion-x/src/styles.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;
