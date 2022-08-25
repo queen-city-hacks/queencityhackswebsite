@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'class',
+  darkMode: "class",
   content: ["./pages/**/*.tsx", "./components/**/*.tsx"],
   theme: {
     extend: {
@@ -16,5 +16,6 @@ module.exports = {
       special: ['"Press Start 2P"'],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
+  important: true,
 };

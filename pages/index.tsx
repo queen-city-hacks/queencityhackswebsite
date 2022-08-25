@@ -15,13 +15,15 @@ import Typed from "react-typed";
 import "react-typed/dist/animatedCursor.css";
 import Navbar from "../components/Navbar";
 import FAQSection from "../components/FAQSection";
+import useLocalStorage from "../lib/useLocalStorage";
 
 const Home: NextPage = () => {
-  const [darkMode, setDarkMode] = useState("dark");
+  const [darkMode, setDarkMode] = useLocalStorage("darkMode", "dark");
   return (
-    <div className={darkMode}>
+    <div>
       <Head>
         <title>Home | queen_city_hacks</title>
+        <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
 
       <section

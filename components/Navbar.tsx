@@ -18,17 +18,13 @@ const Navbar = ({ setDarkMode }: Props) => {
 
   return (
     <>
-      <div className="flex justify-between items-center h-16 p-10 py-16 bg-lightModeBase dark:bg-base">
-        <div className="flex items-center">
-          <Image
-            src="/logo.png"
-            alt="logo"
-            width={140}
-            height={90}
-            className="mr-2"
-          />
+      <div className="flex justify-between items-center h-16 p-10 py-16 bg-lightModeBase dark:bg-base dark:text-white">
+        <div className="cursor-pointer">
+          <Link href="/">
+            <Image src="/logo.png" alt="logo" width={140} height={90} />
+          </Link>
         </div>
-        <div className="flex items-center hidden lg:block">
+        <div className="items-center hidden lg:block">
           <Link href="/">
             <a className="dark:text-white hover:dark:text-white-500 ml-10">
               Home
@@ -50,7 +46,7 @@ const Navbar = ({ setDarkMode }: Props) => {
             </a>
           </Link>
         </div>
-        <div className="flex gap-5">
+        <div className="flex gap-5" id="important">
           <FontAwesomeIcon
             icon={faSun}
             className="hidden dark:block cursor-pointer hover:scale-110 transition hover:text-yellow-300"
