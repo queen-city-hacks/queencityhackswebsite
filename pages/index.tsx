@@ -20,7 +20,7 @@ import useLocalStorage from "../lib/useLocalStorage";
 const Home: NextPage = () => {
   const [darkMode, setDarkMode] = useLocalStorage("darkMode", "dark");
   return (
-    <div>
+    <div className={darkMode}>
       <Head>
         <title>Home | queen_city_hacks</title>
         <link rel="shortcut icon" href="/favicon.ico" />
