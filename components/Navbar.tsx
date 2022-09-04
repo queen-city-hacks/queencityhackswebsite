@@ -35,14 +35,9 @@ const Navbar = ({ setDarkMode }: Props) => {
               Meet The Team
             </a>
           </Link>
-          <Link href="">
-            <a
-              className="dark:text-white hover:dark:text-white-500 ml-10"
-              onClick={() => {
-                alert("work in progress 🤫");
-              }}
-            >
-              Register
+          <Link href="/preregister">
+            <a className="dark:text-white hover:dark:text-white-500 ml-10">
+              Preregister
             </a>
           </Link>
         </div>
