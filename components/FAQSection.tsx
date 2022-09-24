@@ -34,7 +34,6 @@ const FAQSection = () => {
           The dates are going to be between November and December of 2022.
         </FAQ>
       </div>
-      <Footer />
     </section>
   );
 };

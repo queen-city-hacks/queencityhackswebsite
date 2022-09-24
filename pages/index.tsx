@@ -18,9 +18,8 @@ import FAQSection from "../components/FAQSection";
 import useLocalStorage from "../lib/useLocalStorage";
 
 const Home: NextPage = () => {
-  const [darkMode, setDarkMode] = useLocalStorage("darkMode", "dark");
   return (
-    <div className={darkMode}>
+    <div>
       <Head>
         <title>Home | queen_city_hacks</title>
         <link rel="shortcut icon" href="/favicon.ico" />
@@ -30,8 +29,6 @@ const Home: NextPage = () => {
         className="h-screen dark:text-white flex flex-col text-center bg-[url('/dimgamers.jpg')] bg-center bg-cover bg-fixed"
         id="header"
       >
-        <Navbar setDarkMode={setDarkMode} />
-
         <div className="lg:h-1/5 h-1/6" />
         <div className="text-white">
           <h1 className="font-special break-words text-xl hidden lg:block lg:text-6xl">
