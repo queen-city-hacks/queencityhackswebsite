@@ -26,7 +26,7 @@ const Home: NextPage = () => {
       </Head>
 
       <section
-        className="h-screen dark:text-white flex flex-col text-center bg-[url('/dimgamers.jpg')] bg-center bg-cover bg-fixed"
+        className="h-[80vh] dark:text-white flex flex-col text-center bg-[url('/dimgamers.jpg')] bg-center bg-cover bg-fixed"
         id="header"
       >
         <div className="lg:h-1/5 h-1/6" />
