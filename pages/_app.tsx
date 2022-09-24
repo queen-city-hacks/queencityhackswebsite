@@ -8,10 +8,16 @@ import "@fontsource/inter/700.css";
 import "react-notion-x/src/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import Layout from "../components/Layout";
+
 config.autoAddCss = false;
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
 
 export default MyApp;
