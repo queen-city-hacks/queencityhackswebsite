@@ -60,7 +60,6 @@ const MDXPage = ({ mdxSource }: MDXPageProps) => {
       </Head>
       <div className="relative">
         <div className="min-h-screen flex flex-col">
-          <Navbar setDarkMode={setDarkMode} />
           <div className="dark:bg-baseLight bg-lightModeBaseLight flex-grow pb-20">
             <div className="prose dark:prose-invert container mx-auto py-10">
               <MDXRemote {...mdxSource} />
