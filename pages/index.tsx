@@ -36,6 +36,10 @@ const Home: NextPage = () => {
           content="Queen City Hacks is a hackathon for high school students in the Charlotte area. We are a student-run organization that aims to provide a fun and educational experience for students in the CLT area interested in technology."
         />
         <meta
+          name="description"
+          content="Queen City Hacks is a hackathon for high school students in the Charlotte area. We are a student-run organization that aims to provide a fun and educational experience for students in the CLT area interested in technology."
+        />
+        <meta
           property="og:image"
           content="https://queencityhacks.com/regular-people.jpg"
         />
