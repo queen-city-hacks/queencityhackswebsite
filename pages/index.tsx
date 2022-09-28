@@ -21,8 +21,25 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Home | queen_city_hacks</title>
+        <title>
+          Queen City Hacks - Charlotte&apos;s largest high school hackathon!
+        </title>
         <link rel="shortcut icon" href="/favicon.ico" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          property="og:title"
+          content="Home | Queen City Hacks: a Charlotte high school hackathon"
+          key="title"
+        />
+        <meta
+          property="og:description"
+          content="Queen City Hacks is a hackathon for high school students in the Charlotte area. We are a student-run organization that aims to provide a fun and educational experience for students in the CLT area interested in technology."
+        />
+        <meta
+          property="og:image"
+          content="https://queencityhacks.com/regular-people.jpg"
+        />
+        <meta property="og:url" content="https://queencityhacks.com" />
       </Head>
 
       <section
@@ -33,6 +50,7 @@ const Home: NextPage = () => {
         <div className="text-white">
           <h1 className="font-special break-words text-xl hidden lg:block lg:text-6xl">
             <Typed strings={["queen_city_hacks"]} typeSpeed={80} />
+            <span className="hidden">queen city hacks</span>
           </h1>
           <h1 className="font-special break-words lg:hidden text-6xl">
             <Typed
@@ -40,6 +58,7 @@ const Home: NextPage = () => {
               typeSpeed={100}
               showCursor={false}
             />
+            <span className="hidden">queen city hacks</span>
           </h1>
           <h2 className="lg:text-4xl text-2xl pt-10 font-bold w-1/2 mx-auto">
             Charlotte’s biggest 12-hour, in-person, high-school hackathon!
