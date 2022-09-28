@@ -41,7 +41,7 @@ const Home: NextPage = () => {
         />
         <meta
           property="og:image"
-          content="https://queencityhacks.com/regular-people.jpg"
+          content="https://queencityhacks.com/Favicon.png"
         />
         <meta property="og:url" content="https://queencityhacks.com" />
       </Head>
