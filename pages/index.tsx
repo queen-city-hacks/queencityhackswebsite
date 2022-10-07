@@ -16,6 +16,7 @@ import "react-typed/dist/animatedCursor.css";
 import Navbar from "../components/Navbar";
 import FAQSection from "../components/FAQSection";
 import useLocalStorage from "../lib/useLocalStorage";
+import InfoSection from "../components/InfoSection";
 
 const Home: NextPage = () => {
   return (
@@ -74,6 +75,7 @@ const Home: NextPage = () => {
 
         <div className="flex-grow"></div>
       </section>
+      <InfoSection />
       <FAQSection />
     </div>
   );

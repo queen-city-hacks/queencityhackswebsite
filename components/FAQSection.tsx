@@ -1,5 +1,3 @@
-import Footer from "./Footer";
-
 const FAQSection = () => {
   return (
     <section className=" bg-lightModeBaseLight dark:bg-baseLight flex flex-col dark:text-white p-10 relative pb-20">
@@ -10,10 +8,10 @@ const FAQSection = () => {
           celebrates the creativity and innovation of Charlotte’s high school
           students.
         </FAQ>
-        <FAQ question="What is a hackathon?">
-          A hackathon is a 24-hour, in-person, high-school hackathon that
-          celebrates the creativity and innovation of Charlotte’s high school
-          students.
+        <FAQ question="What will we do?">
+          We will use computer science and data science to create projects.
+          There is no specific program or skill which we expect people to know
+          beforehand.
         </FAQ>
         <FAQ question="How much does it cost to join?">
           This Hackathon is 100% free to join so all you have to do is sign up.

@@ -26,17 +26,17 @@ const Navbar = ({ setDarkMode }: Props) => {
         </div>
         <div className="items-center hidden lg:block">
           <Link href="/">
-            <a className="dark:text-white hover:dark:text-white-500 ml-10">
+            <a className="dark:text-white hover:dark:text-white-500 ml-10 hover:font-bold">
               Home
             </a>
           </Link>
           <Link href="/team">
-            <a className="dark:text-white hover:dark:text-white-500 ml-10">
+            <a className="dark:text-white hover:dark:text-white-500 ml-10 hover:font-bold">
               Meet The Team
             </a>
           </Link>
           <Link href="/preregister">
-            <a className="dark:text-white hover:dark:text-white-500 ml-10">
+            <a className="dark:text-white hover:dark:text-white-500 ml-10 hover:font-bold">
               Preregister
             </a>
           </Link>
