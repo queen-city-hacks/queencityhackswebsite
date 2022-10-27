@@ -17,18 +17,17 @@ const InfoSection = () => {
       {/* 3 flex boxes with icons and text and description */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 py-10">
         <InfoItem icon={faCalendarAlt} title="The Date!">
-          The date for the event is <strong>November 17th, 2022</strong>. Add
-          the event on your calendar here!
+          The date for the event is <strong>November 19th-20th, 2022</strong>.
+          Add the event on your calendar!
         </InfoItem>
         <InfoItem icon={faMap} title="The Location!">
-          The event will be held at the Univerity of North Carolina at
-          Charlotte!
-          <br /> 9201 University City Blvd, Charlotte, NC 28223
+          The event will be held at the Allegra Westbrooks Regional
+          <br /> 2412 Beatties Ford Road Charlotte, NC 28216
         </InfoItem>
         <InfoItem icon={faUserClock} title="The Time!">
-          The event will be from 8 AM to 8 PM.
+          The event will be from 9:30 AM to 4:30 PM on Saturday.
           <br />
-          It will be a awesome 12 hour event!
+          It will continue from 1:00 PM to 4:30 PM on Sunday.
         </InfoItem>
       </div>
     </section>

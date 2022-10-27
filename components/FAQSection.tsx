@@ -4,7 +4,7 @@ const FAQSection = () => {
       <h2 className="text-3xl font-bold ">Frequently Asked Questions</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 py-10">
         <FAQ question="What is Queen City Hacks?">
-          Queen City Hacks is a 12-hour, in-person, high-school hackathon that
+          Queen City Hacks is a two day, in-person, high-school hackathon that
           celebrates the creativity and innovation of Charlotte’s high school
           students.
         </FAQ>
@@ -28,9 +28,7 @@ const FAQSection = () => {
         <FAQ question="What are the prizes?">
           We will be giving away a variety of items at this event.
         </FAQ>
-        <FAQ question="When is the event?">
-          The dates are going to be between November and December of 2022.
-        </FAQ>
+        <FAQ question="When is the event?">November 19th-20th, 2022</FAQ>
       </div>
     </section>
   );

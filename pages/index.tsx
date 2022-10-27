@@ -66,10 +66,10 @@ const Home: NextPage = () => {
             <span className="hidden">queen city hacks</span>
           </h1>
           <h2 className="lg:text-4xl text-2xl pt-10 font-bold w-1/2 mx-auto">
-            Charlotte’s biggest 12-hour, in-person, high-school hackathon!
+            Charlotte’s 2-day in-person high-school hackathon!
           </h2>
           <h3 className="font-light pt-1 lg:pt-3 lg:text-2xl">
-            More info coming soon!
+            Registrations now open!
           </h3>
         </div>
 
