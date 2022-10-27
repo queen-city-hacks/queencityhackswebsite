@@ -1,19 +1,17 @@
-import Footer from "./Footer";
-
 const FAQSection = () => {
   return (
     <section className=" bg-lightModeBaseLight dark:bg-baseLight flex flex-col dark:text-white p-10 relative pb-20">
       <h2 className="text-3xl font-bold ">Frequently Asked Questions</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 py-10">
         <FAQ question="What is Queen City Hacks?">
-          Queen City Hacks is a 12-hour, in-person, high-school hackathon that
+          Queen City Hacks is a two day, in-person, high-school hackathon that
           celebrates the creativity and innovation of Charlotte’s high school
           students.
         </FAQ>
-        <FAQ question="What is a hackathon?">
-          A hackathon is a 24-hour, in-person, high-school hackathon that
-          celebrates the creativity and innovation of Charlotte’s high school
-          students.
+        <FAQ question="What will we do?">
+          We will use computer science and data science to create projects.
+          There is no specific program or skill which we expect people to know
+          beforehand.
         </FAQ>
         <FAQ question="How much does it cost to join?">
           This Hackathon is 100% free to join so all you have to do is sign up.
@@ -30,9 +28,7 @@ const FAQSection = () => {
         <FAQ question="What are the prizes?">
           We will be giving away a variety of items at this event.
         </FAQ>
-        <FAQ question="When is the event?">
-          The dates are going to be between November and December of 2022.
-        </FAQ>
+        <FAQ question="When is the event?">November 19th-20th, 2022</FAQ>
       </div>
     </section>
   );

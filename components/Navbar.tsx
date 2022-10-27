@@ -26,20 +26,23 @@ const Navbar = ({ setDarkMode }: Props) => {
         </div>
         <div className="items-center hidden lg:block">
           <Link href="/">
-            <a className="dark:text-white hover:dark:text-white-500 ml-10">
+            <a className="dark:text-white hover:dark:text-white-500 ml-10 hover:font-bold">
               Home
             </a>
           </Link>
           <Link href="/team">
-            <a className="dark:text-white hover:dark:text-white-500 ml-10">
+            <a className="dark:text-white hover:dark:text-white-500 ml-10 hover:font-bold">
               Meet The Team
             </a>
           </Link>
-          <Link href="/preregister">
-            <a className="dark:text-white hover:dark:text-white-500 ml-10">
-              Preregister
-            </a>
-          </Link>
+          <a
+            className="dark:text-white hover:dark:text-white-500 ml-10 hover:font-bold"
+            href="https://organize.mlh.io/participants/events/8723-queen_city_hacks"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Register
+          </a>
         </div>
         <div className="flex gap-5" id="important">
           <FontAwesomeIcon
@@ -88,11 +91,14 @@ const Navbar = ({ setDarkMode }: Props) => {
                 Meet The Team
               </a>
             </Link>
-            <Link href="/preregister">
-              <a className="dark:text-white hover:text-gray-600 hover:dark:text-gray-300 py-2">
-                Preregister
-              </a>
-            </Link>
+            <a
+              className="dark:text-white hover:text-gray-600 hover:dark:text-gray-300 py-2"
+              href="https://organize.mlh.io/participants/events/8723-queen_city_hacks"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Register
+            </a>
           </div>
         </div>
       )}
