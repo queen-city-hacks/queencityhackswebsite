@@ -45,6 +45,37 @@ const Home: NextPage = () => {
           content="https://queencityhacks.com/ogimage.png"
         />
         <meta property="og:url" content="https://queencityhacks.com" />
+        <script type="application/ld+json">
+          {`{
+            "@context": "http://schema.org/",
+            "@type": "Event",
+            "name": "Queen City Hacks",
+            "description": "Queen City Hacks is a hackathon for high school students in the Charlotte area. We are a student-run organization that aims to provide a fun and educational experience for students in the CLT area interested in technology.",
+            "image": "https://www.queencityhacks.com/ogimage.png",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "startDate": "2022-11-19T09:30:00.000-05:00",
+            "endDate": "2022-11-20T16:30:00.000-05:00",
+            "location": [
+              {
+                "@type": "Place",
+                "name": "Allegra Westbrooks Regional Library",
+                "address": {
+                  "streetAddress": "2412 Beatties Ford Road",
+                  "addressLocality": "Charlotte",
+                  "addressRegion": "NC",
+                  "postalCode": "28216",
+                  "addressCountry": "United States"
+                }
+              }
+            ],
+            "organizer": {
+              "@type": "Person",
+              "name": "Ayush Paul",
+              "url": ""
+            }
+          }`}
+        </script>
       </Head>
 
       <section
