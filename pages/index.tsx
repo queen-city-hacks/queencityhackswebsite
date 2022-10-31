@@ -76,6 +76,11 @@ const Home: NextPage = () => {
             }
           }`}
         </script>
+        <script
+          defer
+          data-domain="queencityhacks.com"
+          src="https://plausible.io/js/plausible.js"
+        ></script>
       </Head>
 
       <section
