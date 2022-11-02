@@ -105,7 +105,9 @@ const Home: NextPage = () => {
             Charlotte’s 2-day in-person high-school hackathon!
           </h2>
           <h3 className="font-light pt-1 lg:pt-3 lg:text-2xl">
-            Registrations now open!
+            <a className="text-cyan-400 hover:text-cyan-100 font-bold" href="/register">
+              Registrations
+            </a> now open!
           </h3>
         </div>
 
