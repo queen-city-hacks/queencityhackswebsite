@@ -12,6 +12,7 @@
     "@fontsource/inter": "^4.5.12",
     "@fontsource/press-start-2p": "^4.5.10",
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.1.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@tailwindcss/typography": "^0.5.4",

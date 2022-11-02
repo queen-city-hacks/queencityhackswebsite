@@ -12,7 +12,6 @@ export default function Team({ recordMap }: { recordMap: ExtendedRecordMap }) {
   return (
     <div className="relative pb-10 md:pb-0">
       <NotionPage recordMap={recordMap} />
-      <Footer />
     </div>
   );
 }
