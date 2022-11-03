@@ -5,6 +5,7 @@ import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faArrowUpRightFromSquare,
   faBars,
   faCircleXmark,
   faMoon,
@@ -105,7 +106,18 @@ const Home: NextPage = () => {
             Charlotte’s 2-day in-person high-school hackathon!
           </h2>
           <h3 className="font-light pt-1 lg:pt-3 lg:text-2xl">
-            Registrations now open!
+            <a
+              className="text-cyan-400 hover:text-white font-bold transition-all duration-300 hover:bg-cyan-400 rounded-md px-2"
+              href="/register"
+            >
+              Registrations
+              {/* arrow icon */}
+              <FontAwesomeIcon
+                icon={faArrowUpRightFromSquare}
+                className="ml-2"
+              />
+            </a>{" "}
+            now open!
           </h3>
         </div>
 
