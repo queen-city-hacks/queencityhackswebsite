@@ -15,14 +15,39 @@ const Footer = () => {
     <footer className="p-4 bg-white sm:p-6 dark:bg-base">
       <div className="md:flex md:justify-between">
         <div className="mb-6 md:mb-0">
-          <Link href="/" className="">
-            <div className="flex items-center">
-              <Image src="/logo.png" alt="logo" width={140} height={90} />
-              <span className="self-center text-2xl font-semibold font-special whitespace-nowrap hidden lg:block dark:text-white">
-                queen_city_hacks
-              </span>
-            </div>
-          </Link>
+          <div className="flex flex-col items-start">
+            <Image src="/logo.png" alt="logo" width={140} height={90} />
+            <a href="https://vercel.com?utm_source=queen-city-hacks&utm_campaign=oss">
+              <Image
+                src="/powered_by_vercel.svg"
+                alt="logo"
+                width={212}
+                height={44}
+              />
+            </a>
+            <a
+              href="https://bank.hackclub.com/queencityhacks"
+              className="dark:hidden"
+            >
+              <Image
+                src="/hcblight.svg"
+                alt="bank logo"
+                width={256}
+                height={64}
+              />
+            </a>
+            <a
+              href="https://bank.hackclub.com/queencityhacks"
+              className="hidden dark:block"
+            >
+              <Image
+                src="/hcbdark.svg"
+                alt="bank logo"
+                width={256}
+                height={64}
+              />
+            </a>
+          </div>
         </div>
         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
           <div>
