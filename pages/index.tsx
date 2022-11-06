@@ -125,6 +125,58 @@ const Home: NextPage = () => {
       </section>
       <InfoSection />
       <FAQSection />
+
+
+      <section className="bg-lightModeBaseLight dark:bg-baseLight flex flex-col dark:text-white p-10 relative pb-20">
+      <h2 className="text-3xl font-bold ">Sponsors</h2>
+      {/* 2 flex boxes with pictures */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 py-10 gap-8">
+        <div className="hover:bg-slate-300 dark:hover:bg-black transition-all duration-1000 flex-grow hover:scale-105">
+          <img 
+          src="/krispy.png"
+          height="100%"
+          width="100%"
+          />
+        </div>
+
+        <div className="hidden dark:block hover:bg-black transition-all duration-1000 flex-grow hover:scale-105">
+          <img src="/githubdark.png"
+          height="100%"
+          width="100%"
+          />
+        </div>
+        <div className="dark:hidden hover:bg-slate-300 transition-all duration-1000 flex-grow hover:scale-105">
+          <img src="/githublight.png"
+          height="100%"
+          width="100%"
+          />
+        </div>   
+      </div>
+
+    </section>
+    <section className="bg-lightModeBaseLight dark:bg-baseLight flex flex-col dark:text-white p-10 relative pb-20">
+      <h2 className="text-3xl font-bold ">Endorsed By</h2>
+      {/* 2 flex boxes with pictures */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 grid-rows-1 py-10 gap-8">
+        <div className="hover:bg-slate-300 dark:hover:bg-black transition-all duration-1000 flex-grow hover:scale-105">
+          <img 
+          src="/cmslibrary.png"
+          height="100%"
+          width="100%"
+          />
+        </div>
+
+        <div className="hover:bg-slate-300 dark:hover:bg-black transition-all duration-1000 flex-grow hover:scale-105">
+          <img src="/uncc.png"
+          height="100%"
+          width="100%"
+          />
+        </div>
+      </div>
+    </section>
+
+
+
     </div>
   );
 };
