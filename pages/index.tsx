@@ -43,7 +43,7 @@ const Home: NextPage = () => {
         />
         <meta
           property="og:image"
-          content="https://queencityhacks.com/ogimage.png"
+          content="https://www.queencityhacks.com/ogimage.png"
         />
         <meta property="og:url" content="https://queencityhacks.com" />
         <script type="application/ld+json">
