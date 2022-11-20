@@ -19,6 +19,8 @@ import FAQSection from "../components/FAQSection";
 import useLocalStorage from "../lib/useLocalStorage";
 import InfoSection from "../components/InfoSection";
 
+/* eslint-disable @next/next/no-img-element */
+
 const Home: NextPage = () => {
   return (
     <div>
@@ -144,7 +146,7 @@ const Home: NextPage = () => {
       {/* 2 flex boxes with pictures */}
       <div className="grid grid-cols-1 lg:grid-cols-2 py-10 gap-8">
         <div className="hover:bg-slate-300 dark:hover:bg-black transition-all duration-1000 flex-grow hover:scale-105">
-          <Image 
+          <img 
           src="/krispy.png"
           height="100%"
           width="100%"
@@ -152,20 +154,20 @@ const Home: NextPage = () => {
         </div>
 
         <div className="hidden dark:block hover:bg-black transition-all duration-1000 flex-grow hover:scale-105">
-          <Image src="/githubdark.png"
+          <img src="/githubdark.png"
           height="100%"
           width="100%"
           />
         </div>
         <div className="dark:hidden hover:bg-slate-300 transition-all duration-1000 flex-grow hover:scale-105">
-          <Image src="/githublight.png"
+          <img src="/githublight.png"
           height="100%"
           width="100%"
           />
         </div>   
       {/* 2 flex boxes with pictures */}
         <div className="hover:bg-slate-300 dark:hover:bg-black transition-all duration-1000 flex-grow hover:scale-105">
-          <Image 
+          <img 
           src="/cmslibrary.png"
           height="100%"
           width="100%"
@@ -173,34 +175,34 @@ const Home: NextPage = () => {
         </div>
 
         <div className="dark:hidden  hover:bg-slate-300 transition-all duration-1000 flex-grow hover:scale-105">
-          <Image src="/lightuncc.png" className="mx-auto"
+          <img src="/lightuncc.png" className="mx-auto"
           height="60%"
           width="60%"
           />
         </div>  
 
         <div className="hidden dark:block hover:bg-black transition-all duration-1000 flex-grow hover:scale-105">
-          <Image src="/darkuncc.png"
+          <img src="/darkuncc.png"
           height="100%"
           width="100%"
           />
         </div>
 
         <div className="dark:hidden">
-          <Image src="/lightmlh.png" className="mx-auto hover:bg-slate-300 transition-all duration-1000 flex-grow hover:scale-105"
+          <img src="/lightmlh.png" className="mx-auto hover:bg-slate-300 transition-all duration-1000 flex-grow hover:scale-105"
           height="100%"
           width="100%"
           />
         </div>  
 
         <div className="hidden dark:block hover:bg-black transition-all duration-1000 flex-grow hover:scale-105">
-          <Image src="/darkmlh.png"
+          <img src="/darkmlh.png"
           height="100%"
           width="100%"
           />
         </div>
         <div className="hover:bg-slate-300 dark:hover:bg-black transition-all duration-1000 flex-grow hover:scale-105">
-          <Image 
+          <img 
           src="/firstrobotics.png"
           height="100%"
           width="100%"
