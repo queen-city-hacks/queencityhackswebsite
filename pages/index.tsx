@@ -110,9 +110,9 @@ const Home: NextPage = () => {
           <h3 className="font-light pt-1 lg:pt-3 lg:text-2xl">
             <a
               className="text-cyan-400 hover:text-white font-bold transition-all duration-300 hover:bg-cyan-400 rounded-md px-2"
-              href="https://forms.gle/rJzQDf6YQ5893ib9A"
+              href="/register"
             >
-              Submissions
+              Registrations
               {/* arrow icon */}
               <FontAwesomeIcon
                 icon={faArrowUpRightFromSquare}
