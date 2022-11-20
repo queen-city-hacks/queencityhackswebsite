@@ -26,7 +26,9 @@ const FAQSection = () => {
           participate then they may do so.
         </FAQ>
         <FAQ question="What are the prizes?">
-          We will be giving away a variety of items at this event.
+          Prizes include Rasperry Picos, plaques, gift cards and much much more all thanks to our sponsors. <b/>
+          Check out the <a href="https://docs.google.com/document/d/1Gaai01o76XlidzoVstPyRxORyfzul2glYVEd41lC7A4/edit?usp=sharing"
+          className="text-[#3B82F6] underline">Rubric</a> to see what you can do to win!
         </FAQ>
         <FAQ question="When is the event?">November 19th-20th, 2022</FAQ>
       </div>
