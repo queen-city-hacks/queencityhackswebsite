@@ -135,7 +135,7 @@ const Home: NextPage = () => {
         </h2>
         <h2 className="bg-gradient-to-r hover:scale-125
         from-[#F5C77E] to-[#C61A09] bg-clip-text">
-          Charlotte's Largest <br/> High School Hackathon!          
+          Charlotte's Largest High School Hackathon!          
         </h2>
       </div>
 
