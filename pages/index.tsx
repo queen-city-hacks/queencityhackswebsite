@@ -19,6 +19,8 @@ import FAQSection from "../components/FAQSection";
 import useLocalStorage from "../lib/useLocalStorage";
 import InfoSection from "../components/InfoSection";
 
+/* eslint-disable @next/next/no-img-element */
+
 const Home: NextPage = () => {
   return (
     <div>
@@ -125,6 +127,95 @@ const Home: NextPage = () => {
       </section>
       <InfoSection />
       <FAQSection />
+      
+      <section className="bg-lightModeBaseLight dark:bg-baseLight flex flex-col dark:text-white p-10 relative pb-20 mt-px-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 py-10 gap-8 
+      font-bold text-transparent text-center text-3xl animate-pulse "> 
+        <h2 className="bg-gradient-to-r hover:scale-125
+        from-[#3B82F6] to-[#F1FFFF] bg-clip-text">
+          Over $1000 in Funding!
+        </h2>
+        <h2 className="bg-gradient-to-r hover:scale-125
+        from-[#F5C77E] to-[#C61A09] bg-clip-text">
+          Charlotte&apos;s Largest High School Hackathon!          
+        </h2>
+      </div>
+
+
+      <h2 className="text-3xl font-bold ">Sponsors and Supporters</h2>
+      {/* 2 flex boxes with pictures */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 py-10 gap-8">
+        <div className="hover:bg-slate-300 dark:hover:bg-black transition-all duration-1000 flex-grow hover:scale-105">
+          <img 
+          src="/krispy.png"
+          height="100%"
+          width="100%"
+          />
+        </div>
+
+        <div className="hidden dark:block hover:bg-black transition-all duration-1000 flex-grow hover:scale-105">
+          <img src="/githubdark.png"
+          height="100%"
+          width="100%"
+          />
+        </div>
+        <div className="dark:hidden hover:bg-slate-300 transition-all duration-1000 flex-grow hover:scale-105">
+          <img src="/githublight.png"
+          height="100%"
+          width="100%"
+          />
+        </div>   
+      {/* 2 flex boxes with pictures */}
+        <div className="hover:bg-slate-300 dark:hover:bg-black transition-all duration-1000 flex-grow hover:scale-105">
+          <img 
+          src="/cmslibrary.png"
+          height="100%"
+          width="100%"
+          />
+        </div>
+
+        <div className="dark:hidden  hover:bg-slate-300 transition-all duration-1000 flex-grow hover:scale-105">
+          <img src="/lightuncc.png" className="mx-auto"
+          height="60%"
+          width="60%"
+          />
+        </div>  
+
+        <div className="hidden dark:block hover:bg-black transition-all duration-1000 flex-grow hover:scale-105">
+          <img src="/darkuncc.png"
+          height="100%"
+          width="100%"
+          />
+        </div>
+
+        <div className="dark:hidden">
+          <img src="/lightmlh.png" className="mx-auto hover:bg-slate-300 transition-all duration-1000 flex-grow hover:scale-105"
+          height="100%"
+          width="100%"
+          />
+        </div>  
+
+        <div className="hidden dark:block hover:bg-black transition-all duration-1000 flex-grow hover:scale-105">
+          <img src="/darkmlh.png"
+          height="100%"
+          width="100%"
+          />
+        </div>
+        <div className="hover:bg-slate-300 dark:hover:bg-black transition-all duration-1000 flex-grow hover:scale-105">
+          <img 
+          src="/firstrobotics.png"
+          height="100%"
+          width="100%"
+          />
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
     </div>
   );
 };
