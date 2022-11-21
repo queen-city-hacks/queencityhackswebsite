@@ -3,6 +3,7 @@ import {
   faCircleXmark,
   faMoon,
   faSun,
+  faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
@@ -16,57 +17,68 @@ interface Props {
 const Navbar = ({ setDarkMode }: Props) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
+  const navbarLinks = [
+    {
+      name: "Home",
+      href: "/",
+    },
+    {
+      name: "Meet the Team",
+      href: "#team",
+    },
+    {
+      name: "Projects",
+      href: "/projects",
+    },
+  ];
+
   return (
     <>
-      <div className="flex justify-between items-center h-16 p-10 py-16 bg-lightModeBase dark:bg-base dark:text-white">
-        <div className="cursor-pointer">
-          <Link href="/">
-            <Image src="/logo.png" alt="logo" width={140} height={90} />
-          </Link>
+      <div className="flex-col flex bg-lightModeBase dark:bg-base dark:text-white">
+        <div className="flex justify-between items-center h-16 p-10 py-16">
+          <div className="cursor-pointer">
+            <Link href="/">
+              <Image src="/logo.png" alt="logo" width={140} height={90} />
+            </Link>
+          </div>
+          <div className="items-center block">
+            {navbarLinks.map((link) => (
+              <Link href={link.href} key={link.name}>
+                <a className="text-white hover:text-white-500 ml-10 hover:font-bold hidden lg:inline">
+                  {link.name}
+                </a>
+              </Link>
+            ))}
+            {dropdownOpen ? (
+              <FontAwesomeIcon
+                icon={faXmark}
+                className="lg:hidden cursor-pointer hover:scale-110 transition"
+                size="2x"
+                onClick={() => setDropdownOpen(false)}
+              />
+            ) : (
+              <FontAwesomeIcon
+                icon={faBars}
+                className="lg:hidden cursor-pointer hover:scale-110 transition"
+                size="2x"
+                onClick={() => setDropdownOpen(true)}
+              />
+            )}
+          </div>
         </div>
-        <div className="items-center hidden lg:block">
-          <Link href="/">
-            <a className="dark:text-white hover:dark:text-white-500 ml-10 hover:font-bold">
-              Home
-            </a>
-          </Link>
-          <Link href="/team">
-            <a className="dark:text-white hover:dark:text-white-500 ml-10 hover:font-bold">
-              Meet The Team
-            </a>
-          </Link>
-          <a
-            className="dark:text-white hover:dark:text-white-500 ml-10 hover:font-bold"
-            href="https://organize.mlh.io/participants/events/8723-queen_city_hacks"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Register
-          </a>
-        </div>
-        {/* <div className="flex gap-5" id="important">
-          <FontAwesomeIcon
-            icon={faSun}
-            className="hidden dark:block cursor-pointer hover:scale-110 transition hover:text-yellow-300"
-            size="2x"
-            onClick={() => setDarkMode("light")}
-          />
-          <FontAwesomeIcon
-            icon={faMoon}
-            className="block dark:hidden cursor-pointer hover:scale-110 transition hover:text-blue-600"
-            size="2x"
-            onClick={() => setDarkMode("dark")}
-          />
-
-          <FontAwesomeIcon
-            icon={faBars}
-            className="lg:hidden cursor-pointer hover:scale-110 transition"
-            size="2x"
-            onClick={() => setDropdownOpen(true)}
-          />
-        </div> */}
+        {dropdownOpen && (
+          <div className="flex flex-col pb-5 lg:hidden">
+            {navbarLinks.map((link) => (
+              <Link href={link.href} key={link.name}>
+                <a className="text-gray-300  px-5 py-2 hover:bg-baseDark hover:text-white mb-2 mx-2 rounded-lg">
+                  {link.name}
+                </a>
+              </Link>
+            ))}
+          </div>
+        )}
       </div>
-      {dropdownOpen && (
+      {/* {dropdownOpen && (
         <div
           className={
             "py-5 lg:hidden bg-lightModeBaseLight dark:bg-baseLight absolute w-screen top-0 "
@@ -101,7 +113,7 @@ const Navbar = ({ setDarkMode }: Props) => {
             </a>
           </div>
         </div>
-      )}
+      )} */}
     </>
   );
 };

@@ -5,7 +5,10 @@ import Image, { StaticImageData } from "next/image";
 
 const TeamSection = () => {
   return (
-    <section className="bg-baseDark flex flex-col dark:text-white p-10 relative pb-20">
+    <section
+      className="bg-baseDark flex flex-col dark:text-white p-10 relative pb-20"
+      id="team"
+    >
       <h2 className="text-3xl font-bold text-center font-special">
         Meet the Team
       </h2>
