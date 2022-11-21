@@ -1,6 +1,10 @@
-const Title = (text: string) => {
+interface TitleProps {
+  text: string;
+}
+
+const Title = ({ text }: TitleProps) => {
   return (
-    <h1 className="text-4xl font-bold text-center font-special">{text}</h1>
+    <h2 className="text-3xl font-bold text-center font-special">{text}</h2>
   );
 };
 

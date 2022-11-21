@@ -1,7 +1,9 @@
+import Title from "./Title";
+
 const FAQSection = () => {
   return (
     <section className="bg-baseDark flex flex-col dark:text-white p-10 relative pb-20">
-      <h2 className="text-3xl font-bold ">Frequently Asked Questions</h2>
+      <Title text="Frequently Asked Questions" />
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 py-10">
         <FAQ question="What is Queen City Hacks?">
           Queen City Hacks is a two day, in-person, high-school hackathon that

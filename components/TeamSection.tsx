@@ -2,6 +2,7 @@ import ayush from "../public/team/ayushpolaroid.png";
 import pranav from "../public/team/pranavpolaroid.png";
 import aditya from "../public/team/adityapolaroid.png";
 import Image, { StaticImageData } from "next/image";
+import Title from "./Title";
 
 const TeamSection = () => {
   return (
@@ -9,9 +10,7 @@ const TeamSection = () => {
       className="bg-baseDark flex flex-col dark:text-white p-10 relative pb-20"
       id="team"
     >
-      <h2 className="text-3xl font-bold text-center font-special">
-        Meet the Team
-      </h2>
+      <Title text="Meet the Team" />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-10">
         <div className="translate-x-16 translate-y-7 rotate-6 hover:rotate-0 hover:translate-x-0 hover:translate-y-0 hover:scale-110 transition-all">
           <TeamMember name="Aditya Mehta" image={aditya}>

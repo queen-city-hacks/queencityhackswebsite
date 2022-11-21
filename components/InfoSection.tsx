@@ -5,13 +5,12 @@ import {
   IconDefinition,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Title from "./Title";
 
 const InfoSection = () => {
   return (
     <section className="bg-baseDark flex flex-col dark:text-white p-10 relative pb-20">
-      <h2 className="text-3xl font-bold text-center font-special">
-        More Info!
-      </h2>
+      <Title text="More Info!" />
       {/* 3 flex boxes with icons and text and description */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 py-16">
         <InfoItem icon={faMapPin} color="bg-red-500">

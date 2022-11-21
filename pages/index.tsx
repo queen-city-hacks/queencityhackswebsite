@@ -19,6 +19,7 @@ import FAQSection from "../components/FAQSection";
 import useLocalStorage from "../lib/useLocalStorage";
 import InfoSection from "../components/InfoSection";
 import TeamSection from "../components/TeamSection";
+import SupportersSection from "../components/SupportersSection";
 
 /* eslint-disable @next/next/no-img-element */
 
@@ -128,6 +129,7 @@ const Home: NextPage = () => {
       <InfoSection />
       <TeamSection />
       <FAQSection />
+      <SupportersSection />
     </div>
   );
 };
