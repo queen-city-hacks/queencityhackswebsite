@@ -18,6 +18,7 @@ import Navbar from "../components/Navbar";
 import FAQSection from "../components/FAQSection";
 import useLocalStorage from "../lib/useLocalStorage";
 import InfoSection from "../components/InfoSection";
+import TeamSection from "../components/TeamSection";
 
 /* eslint-disable @next/next/no-img-element */
 
@@ -87,7 +88,7 @@ const Home: NextPage = () => {
       </Head>
 
       <section
-        className="h-[80vh] dark:text-white flex flex-col text-center bg-[url('/dimgamers.jpg')] bg-center bg-cover bg-fixed"
+        className="h-[80vh] dark:text-white flex flex-col text-center bg-[url('/dimgamers.png')] bg-center bg-cover bg-fixed"
         id="header"
       >
         <div className="lg:h-1/5 h-1/6" />
@@ -108,27 +109,28 @@ const Home: NextPage = () => {
             Charlotte’s 2-day in-person high-school hackathon!
           </h2>
           <h3 className="font-light pt-1 lg:pt-3 lg:text-2xl">
+            See the
             <a
               className="text-cyan-400 hover:text-white font-bold transition-all duration-300 hover:bg-cyan-400 rounded-md px-2"
               href="/register"
             >
-              Registrations
+              Projects!
               {/* arrow icon */}
               <FontAwesomeIcon
                 icon={faArrowUpRightFromSquare}
                 className="ml-2"
               />
-            </a>{" "}
-            now open!
+            </a>
           </h3>
         </div>
 
         <div className="flex-grow"></div>
       </section>
       <InfoSection />
+      <TeamSection />
       <FAQSection />
 
-      <section className="bg-lightModeBaseLight dark:bg-baseLight flex flex-col dark:text-white p-10 relative pb-20 mt-px-20">
+      <section className="bg-baseDark flex flex-col dark:text-white p-10 relative pb-20 mt-px-20">
         <div
           className="grid grid-cols-1 lg:grid-cols-2 py-10 gap-8 
       font-bold text-transparent text-center text-3xl animate-pulse "

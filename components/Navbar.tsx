@@ -44,7 +44,7 @@ const Navbar = ({ setDarkMode }: Props) => {
             Register
           </a>
         </div>
-        <div className="flex gap-5" id="important">
+        {/* <div className="flex gap-5" id="important">
           <FontAwesomeIcon
             icon={faSun}
             className="hidden dark:block cursor-pointer hover:scale-110 transition hover:text-yellow-300"
@@ -64,7 +64,7 @@ const Navbar = ({ setDarkMode }: Props) => {
             size="2x"
             onClick={() => setDropdownOpen(true)}
           />
-        </div>
+        </div> */}
       </div>
       {dropdownOpen && (
         <div
