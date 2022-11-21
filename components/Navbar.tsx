@@ -24,7 +24,7 @@ const Navbar = ({ setDarkMode }: Props) => {
     },
     {
       name: "Meet the Team",
-      href: "#team",
+      href: "/#team",
     },
     {
       name: "Projects",
@@ -78,42 +78,6 @@ const Navbar = ({ setDarkMode }: Props) => {
           </div>
         )}
       </div>
-      {/* {dropdownOpen && (
-        <div
-          className={
-            "py-5 lg:hidden bg-lightModeBaseLight dark:bg-baseLight absolute w-screen top-0 "
-          }
-        >
-          <div className="relative flex flex-col">
-            <div className="flex absolute right-10 top-2">
-              <FontAwesomeIcon
-                icon={faCircleXmark}
-                size="lg"
-                onClick={() => setDropdownOpen(false)}
-                className="dark:text-white hover:text-gray-400 hover:dark:text-gray-300 cursor-pointer"
-              />
-            </div>
-            <Link href="/">
-              <a className="dark:text-white hover:text-gray-600 hover:dark:text-gray-300 py-2">
-                Home
-              </a>
-            </Link>
-            <Link href="/team">
-              <a className="dark:text-white hover:text-gray-600 hover:dark:text-gray-300 py-2">
-                Meet The Team
-              </a>
-            </Link>
-            <a
-              className="dark:text-white hover:text-gray-600 hover:dark:text-gray-300 py-2"
-              href="https://organize.mlh.io/participants/events/8723-queen_city_hacks"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Register
-            </a>
-          </div>
-        </div>
-      )} */}
     </>
   );
 };
