@@ -11,8 +11,8 @@ const TeamSection = () => {
       id="team"
     >
       <Title text="Meet the Team" />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-10">
-        <div className="translate-x-16 translate-y-7 rotate-6 hover:rotate-0 hover:translate-x-0 hover:translate-y-0 hover:scale-110 transition-all">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-10">
+        <div className="rotate-2 md:translate-x-16 md:translate-y-7 md:rotate-6 hover:rotate-0 hover:translate-x-0 hover:translate-y-0 hover:scale-110 transition-all">
           <TeamMember name="Aditya Mehta" image={aditya}>
             Organizer and developer
           </TeamMember>
@@ -23,7 +23,7 @@ const TeamSection = () => {
           </TeamMember>
         </div>
 
-        <div className="-rotate-12 -translate-x-16 translate-y-4 hover:rotate-0 hover:translate-x-0 hover:translate-y-0 hover:scale-110 transition-all">
+        <div className="-rotate-2 md:-rotate-12 md:-translate-x-16 md:translate-y-4 hover:rotate-0 hover:translate-x-0 hover:translate-y-0 hover:scale-110 transition-all">
           <TeamMember name="Pranav Mucharla" image={pranav}>
             Organizer and logistical lead
           </TeamMember>
