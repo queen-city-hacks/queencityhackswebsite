@@ -24,6 +24,11 @@ const nextConfig = {
         destination: "https://bank.hackclub.com/donations/start/queencityhacks",
         permanent: true,
       },
+      {
+        source: "/gallery",
+        destination: "https://photos.app.goo.gl/5JEewrp4ZFYFXJVV6",
+        permanent: true,
+      },
     ];
   },
 };

@@ -1,7 +1,9 @@
+import Title from "./Title";
+
 const FAQSection = () => {
   return (
-    <section className=" bg-lightModeBaseLight dark:bg-baseLight flex flex-col dark:text-white p-10 relative pb-20">
-      <h2 className="text-3xl font-bold ">Frequently Asked Questions</h2>
+    <section className="bg-baseDark flex flex-col dark:text-white p-10 relative pb-20">
+      <Title text="Frequently Asked Questions" />
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 py-10">
         <FAQ question="What is Queen City Hacks?">
           Queen City Hacks is a two day, in-person, high-school hackathon that
@@ -26,9 +28,16 @@ const FAQSection = () => {
           participate then they may do so.
         </FAQ>
         <FAQ question="What are the prizes?">
-          Prizes include Rasperry Picos, plaques, gift cards and much much more all thanks to our sponsors. <b/>
-          Check out the <a href="https://docs.google.com/document/d/1Gaai01o76XlidzoVstPyRxORyfzul2glYVEd41lC7A4/edit?usp=sharing"
-          className="text-[#3B82F6] underline">Rubric</a> to see what you can do to win!
+          Prizes include Rasperry Picos, plaques, gift cards and much much more
+          all thanks to our sponsors. <b />
+          Check out the{" "}
+          <a
+            href="https://docs.google.com/document/d/1Gaai01o76XlidzoVstPyRxORyfzul2glYVEd41lC7A4/edit?usp=sharing"
+            className="text-[#3B82F6] underline"
+          >
+            Rubric
+          </a>{" "}
+          to see what you can do to win!
         </FAQ>
         <FAQ question="When is the event?">November 19th-20th, 2022</FAQ>
       </div>
@@ -44,7 +53,7 @@ interface FAQProps {
 
 const FAQ = ({ question, children }: FAQProps) => {
   return (
-    <div className="bg-lightModeBase dark:bg-base p-5 rounded-2xl shadow-2xl hover:scale-105 transition-all">
+    <div className="bg-base p-5 rounded-2xl shadow-2xl hover:scale-105 transition-all">
       <h2 className="text-2xl font-bold underline">{question}</h2>
       <p className="text-lg pt-3">{children}</p>
     </div>

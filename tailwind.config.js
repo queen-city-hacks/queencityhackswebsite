@@ -9,6 +9,7 @@ module.exports = {
         baseLight: "#524d4d",
         lightModeBase: "#f8f0e3",
         lightModeBaseLight: "#ffffff",
+        baseDark: "#261E1E",
       },
     },
     fontFamily: {

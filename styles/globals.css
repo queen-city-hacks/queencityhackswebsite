@@ -50,3 +50,8 @@
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+/* smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
