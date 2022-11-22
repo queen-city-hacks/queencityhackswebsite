@@ -6,13 +6,11 @@ import eatingdonut from "../public/eventmedia/eatingdonut.png";
 import incycle from "../public/eventmedia/incycle.png";
 import mental from "../public/eventmedia/mental.png";
 import wideangle1 from "../public/eventmedia/wideangle1.png";
+import Section from "./Section";
 
 const ImageSection = () => {
   return (
-    <section
-      className="bg-baseDark flex flex-col dark:text-white p-10 relative pb-20"
-      id="images"
-    >
+    <Section id="images">
       <Title text="Media Gallery" />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-10 justify-items-stretch">
         <div className="md:row-span-2 md:col-span-2">
@@ -31,7 +29,7 @@ const ImageSection = () => {
           <MediaItem image={wideangle1} alt="Wide angle" />
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

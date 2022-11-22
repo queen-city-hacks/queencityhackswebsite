@@ -89,9 +89,8 @@ const Home: NextPage = () => {
           src="https://plausible.io/js/plausible.js"
         ></script>
       </Head>
-
       <section
-        className="h-[80vh] dark:text-white flex flex-col text-center bg-[url('/dimgamers.png')] bg-center bg-cover bg-fixed"
+        className="h-[80vh] dark:text-white flex flex-col text-center bg-[url('/dimgamers.png')] bg-center bg-cover lg:bg-fixed"
         id="header"
       >
         <div className="lg:h-1/5 h-1/6" />

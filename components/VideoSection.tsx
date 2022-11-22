@@ -1,18 +1,16 @@
 import Title from "./Title";
 import thumbnail from "../public/thumbnail.png";
 import Image from "next/image";
+import Section from "./Section";
 
 const VideoSection = () => {
   return (
-    <section
-      className="bg-baseDark flex flex-col dark:text-white p-10 relative pb-20"
-      id="images"
-    >
+    <Section id="images">
       <Title text="Watch the Video" />
-      <div className="p-10">
+      <div className="p-10 text-center">
         <Image src={thumbnail} alt="Thumbnail" />
       </div>
-    </section>
+    </Section>
   );
 };
 
