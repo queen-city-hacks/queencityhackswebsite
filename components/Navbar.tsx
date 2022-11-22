@@ -30,6 +30,10 @@ const Navbar = ({ setDarkMode }: Props) => {
       name: "Projects",
       href: "/projects",
     },
+    {
+      name: "Old Site",
+      href: "https://2022.queencityhacks.com",
+    },
   ];
 
   return (
