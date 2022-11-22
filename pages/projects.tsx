@@ -224,7 +224,7 @@ const Projects = () => {
   return (
     <Section id="main">
       <Title text="Projects" />
-      <div className="columns-3 mt-10">
+      <div className="md:columns-2 lg:columns-3 xl:columns-4 mt-10">
         {projects.map((project) => (
           <ProjectCard {...project} key={project.title} />
         ))}
