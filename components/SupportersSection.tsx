@@ -7,13 +7,20 @@ import cmlibrary from "../public/supporters/cmslibrary.png";
 import vercel from "../public/supporters/vercel.png";
 
 import Image, { StaticImageData } from "next/image";
+import Section from "./Section";
 
 const SupportersSection = () => {
   return (
-    <section
-      className="bg-baseDark flex flex-col dark:text-white p-10 relative pb-20"
-      id="supporters"
-    >
+    <>
+      <MonetarySupporters />
+      <InKindSupporters />
+    </>
+  );
+};
+
+const MonetarySupporters = () => {
+  return (
+    <Section id="monetary supporters">
       <Title text="Monetary Supporters" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-10">
         <SupporterImage
@@ -32,6 +39,13 @@ const SupportersSection = () => {
           link="https://datascience.charlotte.edu/"
         />
       </div>
+    </Section>
+  );
+};
+
+const InKindSupporters = () => {
+  return (
+    <Section id="in-kind supporters">
       <Title text="In-Kind Supporters" />
       <div className="grid grid-cols-2 md:grid-cols-3 gap-8 py-10">
         <SupporterImage
@@ -46,7 +60,7 @@ const SupportersSection = () => {
         />
         <SupporterImage image={vercel} alt="Vercel" link="https://vercel.com" />
       </div>
-    </section>
+    </Section>
   );
 };
 

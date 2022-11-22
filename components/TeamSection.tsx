@@ -3,13 +3,11 @@ import pranav from "../public/team/pranavpolaroid.png";
 import aditya from "../public/team/adityapolaroid.png";
 import Image, { StaticImageData } from "next/image";
 import Title from "./Title";
+import Section from "./Section";
 
 const TeamSection = () => {
   return (
-    <section
-      className="bg-baseDark flex flex-col dark:text-white p-10 relative pb-20"
-      id="team"
-    >
+    <Section id="team">
       <Title text="Meet the Team" />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-10">
         <div className="rotate-2 md:translate-x-16 md:translate-y-7 md:rotate-6 hover:rotate-0 hover:translate-x-0 hover:translate-y-0 hover:scale-110 transition-all">
@@ -29,7 +27,7 @@ const TeamSection = () => {
           </TeamMember>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

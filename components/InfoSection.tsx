@@ -5,11 +5,12 @@ import {
   IconDefinition,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Section from "./Section";
 import Title from "./Title";
 
 const InfoSection = () => {
   return (
-    <section className="bg-baseDark flex flex-col dark:text-white p-10 relative pb-20">
+    <Section id="info">
       <Title text="More Info!" />
       {/* 3 flex boxes with icons and text and description */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 py-16">
@@ -29,7 +30,7 @@ const InfoSection = () => {
           on Sunday, with over 10 hours of hacking.
         </InfoItem>
       </div>
-    </section>
+    </Section>
   );
 };
 
