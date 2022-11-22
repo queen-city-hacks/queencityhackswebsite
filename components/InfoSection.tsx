@@ -51,11 +51,7 @@ const InfoItem = ({ icon, color, children }: InfoItemProps) => {
           }
         />
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <p className="text-2xl pt-3 p-5 text-center">{children}</p>
+      <p className="text-2xl pt-3 mt-20 p-5 text-center">{children}</p>
     </div>
   );
 };
