@@ -111,7 +111,7 @@ const Projects = () => {
       title: "AltSource",
       image: altsource,
       alt: "AltSource",
-      link: "https://queencityhacks.dhanvimovva.repl.co/index.html/",
+      link: "https://queencityhacks.dhanvimovva.repl.co/",
       authors: ["Dhanvi Movva", "Josh Adeleke"],
       children: (
         <>
@@ -254,7 +254,12 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <div className="flex flex-col break-inside-avoid-column group hover:scale-105 transition-all shadow-2xl mb-5">
-      <a className="relative -mb-2" href={link}>
+      <a
+        className="relative -mb-2"
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 opacity-0 group-hover:opacity-100 transition-all text-center">
           Check out the <span className="text-cyan-500 underline">project</span>
           !
@@ -273,7 +278,12 @@ const ProjectCard = ({
         {children}
 
         <br />
-        <a className="text-cyan-500" href={link}>
+        <a
+          className="text-cyan-500"
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <span className="underline">Link</span>{" "}
           <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
         </a>
