@@ -8,7 +8,14 @@ const VideoSection = () => {
     <Section id="images">
       <Title text="Watch the Video" />
       <div className="p-10 text-center">
-        <Image src={thumbnail} alt="Thumbnail" />
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/JKKYeJi_SA0"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          className="w-full aspect-video"
+          allowFullScreen
+        ></iframe>
       </div>
     </Section>
   );
