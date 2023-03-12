@@ -10,14 +10,18 @@ import "react-notion-x/src/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import Layout from "../components/Layout";
+import { GoogleAnalytics } from "nextjs-google-analytics";
 
 config.autoAddCss = false;
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <>
+      <GoogleAnalytics trackPageViews gaMeasurementId="G-HEY4PGJ5FG" />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
   );
 }
 
