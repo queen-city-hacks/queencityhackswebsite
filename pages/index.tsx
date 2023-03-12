@@ -83,11 +83,6 @@ const Home: NextPage = () => {
             }
           }`}
         </script>
-        <script
-          defer
-          data-domain="queencityhacks.com"
-          src="https://plausible.io/js/plausible.js"
-        ></script>
       </Head>
       <section
         className="h-[80vh] dark:text-white flex flex-col text-center bg-[url('/dimgamers.png')] bg-center bg-cover lg:bg-fixed"
