@@ -29,6 +29,11 @@ const nextConfig = {
         destination: "https://photos.app.goo.gl/5JEewrp4ZFYFXJVV6",
         permanent: true,
       },
+      {
+        source: "/apply",
+        destination: "https://docs.google.com/forms/d/e/1FAIpQLSdzURVdIMT8362Mzd3S4s35zDQkugJwZM1W6j9E0IvfIRoauA/viewform?usp=sf_link",
+        permanent: true,
+      },
     ];
   },
 };
