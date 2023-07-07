@@ -30,7 +30,7 @@ const Home: NextPage = () => {
     <div>
       <Head>
         <title>
-          Queen City Hacks - Charlotte&apos;s largest high school hackathon!
+          Queen City Hacks - Charlotte&apos;s annual high school hackathon!
         </title>
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
