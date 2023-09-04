@@ -15,19 +15,18 @@ const InfoSection = () => {
       {/* 3 flex boxes with icons and text and description */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 py-16">
         <InfoItem icon={faMapPin} color="bg-red-500">
-          Allegra Westbrooks Regional
+          ImaginOn: The Joe & Joan Martin Center
           <br />
           <br />
-          2412 Beatties Ford Road Charlotte, NC 28216
+          300 E 7th St, Charlotte, NC 28202
         </InfoItem>
         <InfoItem icon={faCalendar} color="bg-green-500">
-          This event took place over November 19th to the 20th, spanning the
-          weekend before Thanksgiving!
+          Queen City Hacks will be from October 28th to October 29th 2023!
         </InfoItem>
 
         <InfoItem icon={faClock} color="bg-purple-500">
-          This was from 9:30 am to 4:30 pm on Saturday, and from 1 pm to 4:30 pm
-          on Sunday, with over 10 hours of hacking.
+          The event will be from 9:30 am to 4:30 pm on Saturday, and from 1 pm
+          to 4:30 pm on Sunday, with over 10 hours of hacking!
         </InfoItem>
       </div>
     </Section>
