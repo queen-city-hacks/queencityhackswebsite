@@ -25,8 +25,8 @@ const InfoSection = () => {
         </InfoItem>
 
         <InfoItem icon={faClock} color="bg-purple-500">
-          The event will be from 9:30 am to 4:30 pm on Saturday, and from 1 pm
-          to 4:30 pm on Sunday, with over 10 hours of hacking!
+          The event will be from 9:30 am to 5:30 pm on Saturday, and from 1 pm
+          to 4:30 pm on Sunday, with over 11 hours of hacking!
         </InfoItem>
       </div>
     </Section>
