@@ -25,28 +25,6 @@ const Footer = () => {
                 height={44}
               />
             </a>
-            <a
-              href="https://bank.hackclub.com/queencityhacks"
-              className="dark:hidden"
-            >
-              <Image
-                src="/hcblight.svg"
-                alt="bank logo"
-                width={256}
-                height={64}
-              />
-            </a>
-            <a
-              href="https://bank.hackclub.com/queencityhacks"
-              className="hidden dark:block"
-            >
-              <Image
-                src="/hcbdark.svg"
-                alt="bank logo"
-                width={256}
-                height={64}
-              />
-            </a>
           </div>
         </div>
         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
