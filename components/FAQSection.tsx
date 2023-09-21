@@ -34,7 +34,7 @@ const FAQSection = () => {
         <FAQ question="What are the prizes?">
           Prizes include Rasperry Picos, plaques, gift cards and much much more
           all thanks to our sponsors. <b />
-          Check out last year's{" "}
+          Check out last year’s{" "}
           <a
             href="https://docs.google.com/document/d/1Gaai01o76XlidzoVstPyRxORyfzul2glYVEd41lC7A4/edit?usp=sharing"
             className="text-[#3B82F6] underline"
