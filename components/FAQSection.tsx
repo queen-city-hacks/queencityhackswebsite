@@ -18,7 +18,11 @@ const FAQSection = () => {
         <FAQ question="How much does it cost to join?">
           This Hackathon is 100% free to join so all you have to do is sign up.
           Thanks to our sponsors we are able to host this event without any
-          fees. We would greatly appreciate any Donations as it would improve
+          fees. We would greatly appreciate any{" "} <a href="https://hcb.hackclub.com/donations/start/queencityhacks"
+            className="text-[#3B82F6] underline"
+          >
+            Donations
+          </a>{" "} as it would improve
           the Hackathon greatly.
         </FAQ>
         <FAQ question="Who can participate?">
@@ -30,7 +34,7 @@ const FAQSection = () => {
         <FAQ question="What are the prizes?">
           Prizes include Rasperry Picos, plaques, gift cards and much much more
           all thanks to our sponsors. <b />
-          Check out the{" "}
+          Check out last year’s{" "}
           <a
             href="https://docs.google.com/document/d/1Gaai01o76XlidzoVstPyRxORyfzul2glYVEd41lC7A4/edit?usp=sharing"
             className="text-[#3B82F6] underline"
@@ -39,7 +43,7 @@ const FAQSection = () => {
           </a>{" "}
           to see what you can do to win!
         </FAQ>
-        <FAQ question="When is the event?">November 19th-20th, 2022</FAQ>
+        <FAQ question="When is the event?">October 28th-29th, 2023</FAQ>
       </div>
     </section>
   );
