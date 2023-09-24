@@ -1,10 +1,11 @@
 import Title from "./Title";
+import Collapsible from "react-collapsible";
 
 const FAQSection = () => {
   return (
-    <section className="bg-baseDark flex flex-col dark:text-white p-10 relative pb-20">
+    <section className="bg-baseDark flex flex-col dark:text-white p-10 relative pb-20 gap-5">
       <Title text="Frequently Asked Questions" />
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 py-10">
+      <div className="flex flex-col max-w-6xl mx-auto gap-10 ">
         <FAQ question="What is Queen City Hacks?">
           Queen City Hacks is a two day, in-person, high-school hackathon that
           celebrates the creativity and innovation of Charlotte’s high school
@@ -18,12 +19,14 @@ const FAQSection = () => {
         <FAQ question="How much does it cost to join?">
           This Hackathon is 100% free to join so all you have to do is sign up.
           Thanks to our sponsors we are able to host this event without any
-          fees. We would greatly appreciate any{" "} <a href="https://hcb.hackclub.com/donations/start/queencityhacks"
+          fees. We would greatly appreciate any{" "}
+          <a
+            href="https://hcb.hackclub.com/donations/start/queencityhacks"
             className="text-[#3B82F6] underline"
           >
             Donations
-          </a>{" "} as it would improve
-          the Hackathon greatly.
+          </a>{" "}
+          as it would improve the Hackathon greatly.
         </FAQ>
         <FAQ question="Who can participate?">
           Our primary patrons are mostly concentrated around the Greater
@@ -57,9 +60,14 @@ interface FAQProps {
 
 const FAQ = ({ question, children }: FAQProps) => {
   return (
-    <div className="bg-base p-5 rounded-2xl shadow-2xl hover:scale-105 transition-all">
-      <h2 className="text-2xl font-bold underline">{question}</h2>
-      <p className="text-lg pt-3">{children}</p>
-    </div>
+    <Collapsible
+      trigger={question}
+      triggerClassName="font-special rounded-2xl hover:scale-105 transition-all mt-16 lg:text-3xl"
+      triggerOpenedClassName="font-special rounded-2xl hover:scale-105 transition-all mt-16 lg:text-3xl"
+      className="bg-base rounded-2xl dark:text-white p-5 lg:text-2xl"
+      openedClassName="bg-base rounded-2xl dark:text-white p-5 lg:text-2xl"
+    >
+      <p className="text-2xl">{children}</p>
+    </Collapsible>
   );
 };
