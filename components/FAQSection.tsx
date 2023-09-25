@@ -61,13 +61,13 @@ interface FAQProps {
 const FAQ = ({ question, children }: FAQProps) => {
   return (
     <Collapsible
-      trigger={question}
-      triggerClassName="font-special rounded-2xl hover:scale-105 transition-all mt-16 lg:text-3xl"
-      triggerOpenedClassName="font-special rounded-2xl hover:scale-105 transition-all mt-16 lg:text-3xl"
+      trigger={question + " +"}
+      triggerClassName="font-special rounded-2xl hover:scale-105 transition-all mt-16 lg:text-3xl underline"
+      triggerOpenedClassName="font-special rounded-2xl hover:scale-105 transition-all mt-16 lg:text-3xl underline"
       className="bg-base rounded-2xl dark:text-white p-5 lg:text-2xl"
       openedClassName="bg-base rounded-2xl dark:text-white p-5 lg:text-2xl"
     >
-      <p className="text-2xl">{children}</p>
+      <p className="text-2xl pt-5">{children}</p>
     </Collapsible>
   );
 };
