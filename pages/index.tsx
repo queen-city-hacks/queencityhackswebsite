@@ -85,42 +85,32 @@ const Home: NextPage = () => {
         </script>
       </Head>
       <section
-        className="h-[80vh] dark:text-white flex flex-col text-center bg-[url('/dimgamers.png')] bg-center bg-cover lg:bg-fixed"
+        className="min-h-[80vh] bg-baseDark flex flex-col lg:flex-row text-center p-10 gap-5"
         id="header"
       >
-        <div className="lg:h-1/5 h-1/6" />
-        <div className="text-white">
-          <h1 className="font-special break-words text-xl hidden lg:block lg:text-6xl">
-            <Typed strings={["queen_city_hacks"]} typeSpeed={80} />
-            <span className="hidden">queen city hacks</span>
+        <div className="bg-[url('/dimgamers.png')] bg-center bg-cover lg:bg-fixed rounded-xl flex-1 flex flex-col align-middle justify-center p-4">
+          <h1 className="text-5xl font-bold font-special text-white">Queen</h1>
+          <h1 className="text-5xl font-bold font-special text-white">City</h1>
+          <h1 className="text-5xl font-bold font-special text-white">Hacks</h1>
+          <h1 className="text-5xl font-bold font-special text-[#FFD700] leading-relaxed tex">
+            2023
           </h1>
-          <h1 className="font-special break-words lg:hidden text-6xl">
-            <Typed
-              strings={["queen city hacks"]}
-              typeSpeed={100}
-              showCursor={false}
-            />
-            <span className="hidden">queen city hacks</span>
-          </h1>
-          <h2 className="lg:text-4xl text-2xl pt-10 font-bold w-1/2 mx-auto">
-            Charlotte’s 2-day in-person high-school hackathon!
-          </h2>
-          <h3 className="font-light pt-1 lg:pt-3 lg:text-2xl">
-            See the
-            <Link href="/projects">
-              <a className="text-cyan-400 hover:text-white font-bold transition-all duration-300 hover:bg-cyan-400 rounded-md px-2">
-                Projects!
-                {/* arrow icon */}
-                <FontAwesomeIcon
-                  icon={faArrowUpRightFromSquare}
-                  className="ml-2"
-                />
-              </a>
-            </Link>
-          </h3>
         </div>
-
-        <div className="flex-grow"></div>
+        <div className=" text-white rounded-xl flex-1 flex flex-col gap-5 align-middle justify-center p-10">
+          <h2 className="lg:text-4xl font-bold font-special text-white">
+            Charlotte&apos;s largest high school hackathon is back for another
+            year!
+          </h2>
+          <h3 className="lg:text-2xl font-bold text-white">
+            Pre-register today to stay updated!
+          </h3>
+          <a
+            href="https://forms.gle/YfYN1uZ9PRRFtMfn9"
+            className="bg-[#FFD700] rounded-xl font-special p-5 lg:text-3xl text-xl text-black hover:bg-[#FFDF00] transition-all hover:scale-105"
+          >
+            Pre-Register Now <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+          </a>
+        </div>
       </section>
       <InfoSection />
       <TeamSection />
