@@ -89,7 +89,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://bank.hackclub.com/queencityhacks"
+                  href="https://hcb.hackclub.com/queen-city-hacks-2023"
                   className="hover:underline"
                 >
                   Finances
