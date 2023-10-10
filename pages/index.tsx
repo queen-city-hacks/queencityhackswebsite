@@ -102,13 +102,13 @@ const Home: NextPage = () => {
             year!
           </h2>
           <h3 className="lg:text-2xl font-bold text-white">
-            Pre-register today to stay updated!
+            Register today to stay updated!
           </h3>
           <a
-            href="https://forms.gle/YfYN1uZ9PRRFtMfn9"
+            href="https://events.mlh.io/events/10556-queen-city-hacks-2023"
             className="bg-[#FFD700] rounded-xl font-special p-5 lg:text-3xl text-xl text-black hover:bg-[#FFDF00] transition-all hover:scale-105"
           >
-            Pre-Register Now <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+            Register Now <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
           </a>
         </div>
       </section>

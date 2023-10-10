@@ -22,21 +22,22 @@ const MonetarySupporters = () => {
   return (
     <Section id="monetary supporters">
       <Title text="Monetary Supporters" />
-      <div className="grid grid-cols-1 md:grid-cols-1 gap-8 py-10 px-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-10 px-10">
         {/* <SupporterImage
           image={hackclubandfirst}
           alt="Hack Club and First"
           link="https://bank.hackclub.com/hackathon-grant-fund"
-        />
-        <SupporterImage
-          image={mlh}
-          alt="Major League Hacking"
-          link="https://mlh.io"
         /> */}
         <SupporterImage
           image={uncc}
           alt="UNC Charlotte School of Data Science"
           link="https://datascience.charlotte.edu/"
+        />
+
+        <SupporterImage
+          image={mlh}
+          alt="Major League Hacking"
+          link="https://mlh.io"
         />
       </div>
     </Section>
