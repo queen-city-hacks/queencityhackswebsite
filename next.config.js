@@ -31,7 +31,14 @@ const nextConfig = {
       },
       {
         source: "/apply",
-        destination: "https://docs.google.com/forms/d/e/1FAIpQLSdzURVdIMT8362Mzd3S4s35zDQkugJwZM1W6j9E0IvfIRoauA/viewform?usp=sf_link",
+        destination:
+          "https://docs.google.com/forms/d/e/1FAIpQLSdzURVdIMT8362Mzd3S4s35zDQkugJwZM1W6j9E0IvfIRoauA/viewform?usp=sf_link",
+        permanent: true,
+      },
+      {
+        source: "/replit",
+        destination:
+          "https://replit.com/teams/join/ztbncniaekhcsybcxvpwhycacuuozikr-qch2023",
         permanent: true,
       },
     ];
