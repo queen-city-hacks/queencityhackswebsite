@@ -17,7 +17,7 @@ const Certificate = () => {
   useEffect(() => {
     const generatePDF = async () => {
       if (name) {
-        const url = "/certif.pdf";
+        const url = "/Certificates_(2023).pdf";
 
         const existingPdfBytes = await fetch(url).then((res) =>
           res.arrayBuffer()
