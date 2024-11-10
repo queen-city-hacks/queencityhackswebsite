@@ -105,7 +105,7 @@ const Home: NextPage = () => {
             Register today to stay updated!
           </h3>
           <a
-            href="https://events.mlh.io/events/10556-queen-city-hacks-2023"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfuUYL6k0qEIGFyUU8r1dQoP_VzLxvCw7kEs53FHfApO3BRrg/viewform"
             className="bg-[#FFD700] rounded-xl font-special p-5 lg:text-3xl text-xl text-black hover:bg-[#FFDF00] transition-all hover:scale-105"
           >
             Register Now <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
